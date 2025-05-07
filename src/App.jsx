@@ -44,7 +44,7 @@ function App() {
             type="text"
             value={password}
             ref={passwordRef}
-            readOnly
+            
             className="flex-grow bg-gray-800 text-orange-300 p-2 rounded outline-none"
           />
           <button
@@ -67,6 +67,7 @@ function App() {
               min={8}
               max={20}
               value={length}
+              readOnly
               onChange={(e) => setLength(parseInt(e.target.value))}
               className="w-full accent-orange-500"
             />
